@@ -1,38 +1,27 @@
-# Qihang Lu - Personal Portfolio Materials
+# Qihang Lu · Personal Portfolio
 
-Source materials for a future personal website. This repository is private; no website has been published.
+A static English portfolio with a dark, atmospheric space theme and seven project pages: robotics, interactive design, physics, summer school, game design, music, and volunteering.
 
-## Materials
+## Preview locally
 
-The supplied archive contains 41 original assets across seven categories, with original names preserved under `Additional information/`:
+Run `python3 -m http.server 8000` from the repository root, then open http://localhost:8000. No build step is required.
 
-| Category | Original assets |
-| --- | ---: |
-| China Young Physicists' Tournament 2026 | 9 |
-| First Robotics Competition 2026 | 9 |
-| Game designs | 2 |
-| Interactive design | 6 |
-| Music | 8 |
-| Robot kinetics summer school | 5 |
-| SteppingStone Voluntary Program | 2 |
+## Structure
 
-## Restore two large assets before building the website
+- `index.html`: homepage
+- `projects/`: seven detail pages
+- `styles.css` and `app.js`: responsive styling and interactions
+- `site-assets/`: optimized cover images
+- `Additional information/`: original supporting materials
+- `large-file-parts/`: verified parts for two large originals
 
-The upload connection could not accept the two largest files in one request. Their exact original bytes are stored as parts under `large-file-parts/`.
+The website reconstructs the large PDF and video in the browser when requested, verifies their SHA-256 on secure origins, and opens them using temporary blob URLs. To restore the original files on disk, run `python3 restore_large_files.py`.
 
-After cloning this repository, run:
+## Publishing
 
-```sh
-python3 restore_large_files.py
-```
+The repository contains the website source. Public hosting must be configured separately; this commit does not enable hosting or change repository visibility. Serve the repository root as a static site. Relative paths support a project subdirectory.
 
-This recreates these files in their original folders and verifies their size and SHA-256 checksum:
+## Validation
 
-- `Additional information/Interactive design/portfolio.pdf`
-- `Additional information/First Robotics Competition 2026/Shooter test.mp4`
+All 138 local HTML file references across eight pages were checked and JavaScript syntax was validated. Browser rendering and interactive QA remain pending because the available browser runtime could not be installed in the development environment.
 
-The remaining 39 assets are directly available in their original folders. The script does not overwrite modified files or delete the stored parts. Run it before a future site build that references the two large assets.
-
-## Future website
-
-Use the seven categories as project sections, linking relevant introductions, photographs, certificates, demonstrations, and portfolio documents. All original media remain unmodified.

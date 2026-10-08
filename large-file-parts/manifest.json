@@ -1,0 +1,22 @@
+[
+  {
+    "path": "Additional information/Interactive design/portfolio.pdf",
+    "parts": [
+      "large-file-parts/portfolio.pdf/001.part",
+      "large-file-parts/portfolio.pdf/002.part",
+      "large-file-parts/portfolio.pdf/003.part"
+    ],
+    "size": 12888578,
+    "sha256": "ad9e9632db9e276bc71231a14f07db86aa1a0f629bdcf88444649578bb886004"
+  },
+  {
+    "path": "Additional information/First Robotics Competition 2026/Shooter test.mp4",
+    "parts": [
+      "large-file-parts/Shooter test.mp4/001.part",
+      "large-file-parts/Shooter test.mp4/002.part",
+      "large-file-parts/Shooter test.mp4/003.part"
+    ],
+    "size": 13406424,
+    "sha256": "49af6a5a1d31e69158ebb5b43532442232443e7c18ed87b72abdf672814fc2c9"
+  }
+]

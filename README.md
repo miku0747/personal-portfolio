@@ -19,7 +19,9 @@ The website reconstructs the large PDF and video in the browser when requested, 
 
 ## Publishing
 
-The repository contains the website source. Public hosting must be configured separately; this commit does not enable hosting or change repository visibility. Serve the repository root as a static site. Relative paths support a project subdirectory.
+Live portfolio: https://qihang-lu-portfolio.sagefawn2.chatgpt.site
+
+The website is publicly hosted with Sites; this GitHub repository remains private. The published copy includes H.264 playback versions of four HEVC videos; the original files in this repository are preserved. Hosting is separate from GitHub, so changes here do not automatically deploy. Relative paths support a project subdirectory.
 
 ## Validation
 
